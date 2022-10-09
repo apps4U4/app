@@ -1,0 +1,58 @@
+@media screen and (max-width:500px){
+    .main {
+        padding: 0 15px;
+    }
+    .container, .app_container{
+        padding: 15px;
+    }
+    .app_image img {
+        max-width: 80px;
+    }
+    .app_image p {
+        font-size: 13px;
+    }
+    .app_name {
+        font-size: 18px;
+    }
+    .items {
+        font-size: 13px;
+        font-weight: 600;
+    }
+    .item_span img {
+        height: 12px;
+    }
+    .rating{
+        padding: 4px 6px;
+        font-size: 11px;
+        top: 13px;
+    }
+    .rating img {
+        width: 10px;
+        margin-right: 2px;
+    }
+    .ios {
+        margin-right: 5px;
+    }
+    .logo img{
+        width: 200px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .app_name {
+        font-size: 16px;
+    }
+    .items {
+        font-size: 11px;
+    }
+    .choose_device {
+        font-weight: 700;
+        font-size: 11px;
+    }
+    .down_buttons {
+        margin-top: 5px;
+    }
+    .down_buttons button {
+        font-size: 11px;
+    }
+}

