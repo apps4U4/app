@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap');
+*{padding:0;margin:0;box-sizing:border-box;}
+body{
+    background-image: linear-gradient(180deg, #1379d1 0%, #44a8ff 100%);
+    background-color: rgb(0,155,255);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+.hide{
+    display: none !important;
+}
+
+.logo{
+    margin: 30px auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 300px;
+    animation: example linear 2s infinite alternate;
+}
+@keyframes example {
+    0%   {transform: scale(1);}
+    25%  {transform: scale(1.1);}
+    50%  {transform: scale(1);}
+    75%  {transform: scale(1);}
+    100% {transform: scale(1.1);}
+}
+
+.main{
+    padding: 0 20px;
+    margin-bottom: 40px;
+}
+.container{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.app_container{
+    border: 2px solid #2196f3;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+}
+.app_container:not(:last-child){
+    margin-bottom: 15px;
+}
+.app_image img{
+    width: 100%;
+    max-width: 100px;
+    border-radius: 4px;
+}
+.app_image p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+}
+.app_info{
+    padding-left: 20px;
+}
+.app_name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.items{
+    display: flex;
+    margin-top: 5px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+.item_span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_span img{
+    height: 15px;
+    margin-right: 3px;
+}
+.user_span{
+    margin-right: 15px;
+}
+.down_span{
+    color: #1379d1;
+}
+.choose_device{
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.down_buttons{
+    display: flex;
+    margin-top: 10px;
+}
+.down_buttons button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:none;
+    border: none;
+    font-weight: 900;
+    cursor: pointer;
+    background-color: rgb(248, 248, 248);
+    padding: 5px 10px;
+    border-radius: 4px;
+    outline: 0;
+}
+.down_buttons button img{
+    display: block;
+    margin-right: 5px;
+}
+.ios{
+    margin-right: 15px;
+    color: #1379d1;
+}
+.android{
+    color: #0ba537;
+}
+
+.down_buttons button.ios:hover{
+    background-color: #1379d1;
+    color: #ffffff;
+}
+.down_buttons button.android:hover{
+    background-color: #0ba537;
+    color: #ffffff;
+}
+.rating{
+    position: absolute;
+    background:#2196f3;
+    padding: 8px 10px;
+    top: 20px;
+    right: 0;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 5px 0 0 5px;
+}
+.rating img{
+    width: 18px;
+    margin-right: 5px;
+}
+
+
+
+
+.loading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,155,255,0.8);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid rgba(0,0,0,0.1);
+    width: 40px;
+    height: 40px;
+    -webkit-animation: spin 0.6s linear infinite; /* Safari */
+    animation: spin 0.6s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.gamemaker{
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+.fakemobile{
+    background-image: linear-gradient(200deg, #78e5ff 0%, #5bbcff 50%, #e2a2ff 100%);
+    background-size: 100% 283px;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+.close_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    color: #575757;
+    padding: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 900;
+}
+.iphone-display{
+    position: relative;
+    width: 210px;
+    height: 183px;
+    margin-top: 37px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEwIiBoZWlnaHQ9IjE4MyIgdmlld0JveD0iMCAwIDIxMCAxODMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjx0aXRsZT5pbGx1c3RyYXRpb24tZGV2aWNlLWlwaG9uZXgtYXBwc0AxeDwvdGl0bGU+PGRlZnM+PHBhdGggZD0iTTMzLjY1MyAxMGgxNDMuNjk0QzE5MC40MSAxMCAyMDEgMjAuNTUgMjAxIDMzLjU2NVYxODNIMTBWMzMuNTY1QzEwIDIwLjU1IDIwLjU5IDEwIDMzLjY1MyAxMHoiIGlkPSJhIi8+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PHBhdGggZD0iTTM1LjQ5MyAwaDEzOS4wMTRDMTk0LjExIDAgMjEwIDE1LjgzIDIxMCAzNS4zNlYxODNIMFYzNS4zNkMwIDE1LjgzIDE1Ljg5IDAgMzUuNDkzIDB6IiBmaWxsPSIjMDAwIi8+PHVzZSBmaWxsPSIjMjIyIiB4bGluazpocmVmPSIjYSIvPjxwYXRoIGQ9Ik01NCAxMGgxMDR2MS41OGMwIDcuNDEtNi4wNjYgMTMuNDItMTMuNTQ4IDEzLjQySDY3LjU0OEM2MC4wNjUgMjUgNTQgMTguOTkgNTQgMTEuNThWMTB6IiBmaWxsPSIjMDAwIi8+PHBhdGggZmlsbD0iIzIyMiIgZD0iTTEzIDMyaDE4NnYxNTFIMTN6Ii8+PGcgZmlsbD0iI0ZGRiI+PHBhdGggZD0iTTI3LjYxIDIzLjE2N2guNzR2LTUuMjg1aC0uNzQ2bC0xLjI4My45OXYuODA1bDEuMjc0LS45ODJoLjAxN3Y0LjQ3MnptMy4xNiAwaC43Mzh2LTUuMjg1aC0uNzQ2bC0xLjI4NC45OXYuODA1bDEuMjczLS45ODJoLjAxOHY0LjQ3MnptMi40NTQtLjgxN2MuMjQ2IDAgLjQ0Mi0uMjEyLjQ0Mi0uNDggMC0uMjY3LS4xOTYtLjQ4LS40NDMtLjQ4cy0uNDQzLjIxMy0uNDQzLjQ4YzAgLjI2OC4xOTYuNDguNDQyLjQ4em0wLTIuNjdjLjI0NiAwIC40NDItLjIwOC40NDItLjQ4IDAtLjI2Ny0uMTk2LS40OC0uNDQzLS40OHMtLjQ0My4yMTMtLjQ0My40OGMwIC4yNy4xOTYuNDguNDQyLjQ4em0zLjAzMiAzLjU4NWMxLjA1IDAgMS43ODYtLjc1IDEuNzg2LTEuODM0IDAtMS4wMjUtLjY3Mi0xLjc2OC0xLjYwOC0xLjc2OC0uNDc2IDAtLjg3NS4yLTEuMDg4LjUzNWgtLjAxN2wuMTM0LTEuNjIzaDIuMjkzdi0uNjkyaC0yLjlsLS4yNTggMi45ODhoLjY5Yy4xOS0uMzQ4LjU1NS0uNTU2Ljk3Ny0uNTU2LjYwOCAwIDEuMDMzLjQ3NiAxLjAzMyAxLjEzOCAwIC42NjMtLjQyNiAxLjEyOC0xLjA0IDEuMTI4LS41NDQgMC0uOTYtLjM2LTEuMDE0LS44ODNoLS43MjNjLjA0NC45MjMuNzU3IDEuNTY3IDEuNzMgMS41Njd6bTQuMjM1LjAwNGMtLjcyIDAtMS4yOTYtLjQtMS42MTQtMS4xMTQtLjItLjQyMi0uMy0uOTQyLS4zLTEuNTYgMC0xLjc3LjcyOC0yLjgxNyAxLjk0Ny0yLjgxNy44NiAwIDEuNTMuNTYgMS42NzggMS40aC0uNzU2Yy0uMTE4LS40My0uNDgzLS43MTMtLjkzLS43MTMtLjc2NiAwLTEuMjEyLjc1NC0xLjIxNSAyLjA4M2guMDEzYy4yMTMtLjUxMy43My0uODU3IDEuMzM3LS44NTcuOTMgMCAxLjYxOC43NDMgMS42MTggMS43NDcgMCAxLjA1OC0uNzQ2IDEuODI3LTEuNzggMS44Mjd6bS0uMDA2LS42OTNjLjU3NCAwIDEuMDMzLS40OSAxLjAzMy0xLjExIDAtLjY0LS40My0xLjEwMi0xLjAyNy0xLjEwMi0uNTk1IDAtMS4wMzcuNDYyLTEuMDM3IDEuMDg4IDAgLjYyNi40NSAxLjEyNCAxLjAzIDEuMTI0em0xMjguMTYtMy4wN2MxLjAxNi0xLjAxNyAyLjQyMi0xLjY0NyAzLjk3NS0xLjY0NyAxLjU1IDAgMi45NTcuNjMgMy45NzUgMS42NDdsLS42MjguNjI4Yy0uODU3LS44NTctMi4wNC0xLjM4Ny0zLjM0OC0xLjM4Ny0xLjMxIDAtMi40OTIuNTMtMy4zNSAxLjM4N2wtLjYyNy0uNjI3em0xLjI1NCAxLjI1NmMuNjk2LS42OTcgMS42NTgtMS4xMjcgMi43Mi0xLjEyN3MyLjAyNC40MyAyLjcyIDEuMTI3bC0uNjI4LjYyN2MtLjUzNi0uNTM1LTEuMjc2LS44NjYtMi4wOTMtLjg2Ni0uODE4IDAtMS41NTcuMzMtMi4wOTMuODY2bC0uNjI4LS42Mjd6bTEuMjU1IDEuMjU1Yy4zNzUtLjM3NC44OTMtLjYwNiAxLjQ2NS0uNjA2LjU3MiAwIDEuMDkuMjMyIDEuNDY1LjYwN2wtMS40NjUgMS40NjQtMS40NjUtMS40NjV6bS02LjAxNC0zLjExNWgxLjA4NmMuMDg1IDAgLjE1NC4wNzUuMTU0LjE2N3Y0LjcxYzAgLjA5Mi0uMDcuMTY3LS4xNTQuMTY3aC0xLjA4N2MtLjA4NiAwLS4xNTUtLjA3NC0uMTU1LS4xNjZ2LTQuNzFjMC0uMDkuMDctLjE2NS4xNTQtLjE2NXptLTIuMDk0IDEuMDFoMS4wODhjLjA4NSAwIC4xNTQuMDc0LjE1NC4xNjZ2My43YzAgLjA5Mi0uMDcuMTY3LS4xNTQuMTY3aC0xLjA4OGMtLjA4NSAwLS4xNTQtLjA3NC0uMTU0LS4xNjZ2LTMuN2MwLS4wOTIuMDctLjE2Ny4xNTMtLjE2N3ptLTIuMDkyIDEuMDA3aDEuMDg3Yy4wODYgMCAuMTU0LjA3NS4xNTQuMTY3djIuNjkzYzAgLjA5Mi0uMDcuMTY2LS4xNTQuMTY2aC0xLjA4OGMtLjA4NSAwLS4xNTQtLjA3NC0uMTU0LS4xNjZ2LTIuNjkzYzAtLjA5Mi4wNy0uMTY2LjE1My0uMTY2em0tMi4wOTMuNTA0aDEuMDljLjA4NCAwIC4xNTIuMDc1LjE1Mi4xNjd2Mi4xOWMwIC4wOS0uMDcuMTY2LS4xNTQuMTY2aC0xLjA4N2MtLjA4NCAwLS4xNTMtLjA3NC0uMTUzLS4xNjZ2LTIuMTg4YzAtLjA5Mi4wNy0uMTY3LjE1My0uMTY3em0yMS4yNS0xLjZoNy43MTJjLjA4NSAwIC4xNTQuMDc1LjE1NC4xNjd2Mi45M2MwIC4wOS0uMDcuMTY2LS4xNTQuMTY2aC03LjcxM2MtLjA4NiAwLS4xNTUtLjA3NC0uMTU1LS4xNjZ2LTIuOTI4YzAtLjA5Mi4wNy0uMTY3LjE1My0uMTY3em05LjA3Ljg5N2MuMzQ1LjA5OC42LjQzOC42Ljg0NCAwIC40MDUtLjI1Ni43NDYtLjYwMi44NDN2LTEuNjg1eiIvPjxwYXRoIGQ9Ik0xNzkuNjE2IDE4Ljk1NGg4LjcwMmMuMjU1IDAgLjQ2LjIyNC40Ni41djRjMCAuMjc4LS4yMDUuNS0uNDYuNWgtOC43MDJjLS4yNTUgMC0uNDYyLS4yMjItLjQ2Mi0uNXYtNGMwLS4yNzUuMjA2LS41LjQ2LS41em0uNC40MzVjLS4yNTQgMC0uNDYuMjIzLS40Ni41djMuMTNjMCAuMjc3LjIwNi41LjQ2LjVoNy45Yy4yNTYgMCAuNDYyLS4yMjMuNDYyLS41di0zLjEzYzAtLjI3Ni0uMjA2LS41LS40Ni0uNWgtNy45eiIvPjwvZz48cmVjdCBmaWxsLW9wYWNpdHk9Ii4wOCIgZmlsbD0iI0ZGRiIgeD0iNjgiIHk9IjQzIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI3Ii8+PHJlY3QgZmlsbC1vcGFjaXR5PSIuMDgiIGZpbGw9IiNGRkYiIHg9IjY4IiB5PSIxMDAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjciLz48cmVjdCBmaWxsLW9wYWNpdHk9Ii4wOCIgZmlsbD0iI0ZGRiIgeD0iMjQiIHk9IjEwMCIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiByeD0iNyIvPjxyZWN0IGZpbGwtb3BhY2l0eT0iLjA4IiBmaWxsPSIjRkZGIiB4PSIxMTEiIHk9IjQzIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI3Ii8+PHJlY3QgZmlsbC1vcGFjaXR5PSIuMDgiIGZpbGw9IiNGRkYiIHg9IjExMSIgeT0iMTAwIiB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHJ4PSI3Ii8+PHJlY3QgZmlsbC1vcGFjaXR5PSIuMDgiIGZpbGw9IiNGRkYiIHg9IjE1NSIgeT0iNDMiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjciLz48cmVjdCBmaWxsLW9wYWNpdHk9Ii4wOCIgZmlsbD0iI0ZGRiIgeD0iMTU1IiB5PSIxMDAiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcng9IjciLz48L2c+PC9zdmc+);
+}
+.app-icon-area {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 14px;
+    top: 43px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.app-icon-region {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+.app-modal-icon {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    border-radius: 25%;
+    border-radius: 20%;
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    vertical-align: top;
+}
+.fake-homescreen-app-name {
+    margin-top: 2px;
+    color: #fff;
+    width: 50px;
+    text-align: center;
+    font-size: 9px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.gameinfo{
+    text-align: center;
+    position: relative;
+}
+.gamenameinfo{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.choosed_device{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.choosed_device button{
+    margin-left: 5px;
+    outline: 0;
+}
+.download_button{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download_button button{
+    padding: 12px 40px;
+    border: 2px solid #0075ff;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    border-radius: 30px;
+    font-weight: 600;
+    color: #0075ff;
+    cursor: pointer;
+    transition: ease .2s all;
+    outline: 0;
+}
+.download_button button:hover{
+    background-color: #0075ff;
+    color: #ffffff;
+}
+.downgame{
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.block_gameinfo{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.downtop{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.downbottom{
+    margin-top: 25px;
+    font-size: 18px;
+    color: #2e2e2e;
+}
+.loadbar{
+    margin-top: 25px;
+    height: 10px;
+    width: 100%;
+    background-color: #a8d0ff;
+    border-radius: 30px;
+    position: relative;
+}
+.loadbarvalue{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    border-radius: 30px;
+    background-color: #0075ff;
+
+    animation-name: speedload;
+    animation-duration: 10s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes speedload {
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+
+.ios_choosed .android{
+    display: none;
+}
+
+.android_choosed .ios{
+    display: none;
+}
